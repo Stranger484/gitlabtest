@@ -9,7 +9,7 @@ namespace gitlabtest
         public string password { get; set; }
         public string uri { get; set; }
     }
-    // Класс для десерелиализации ответа OAuth
+    // Класс для десериализации ответа OAuth
     internal class OAuthResponse
     {
         public string access_token { get; set; }
@@ -19,14 +19,14 @@ namespace gitlabtest
         public string scope { get; set; }
         public int created_at { get; set; }
     }
-    // Класс для десерелиализации информации о пользователе, указаны только нужные значения
+    // Класс для десериализации информации о пользователе, указаны только нужные значения
     internal class User
     {
         public int id { get; set; }
         public string name { get; set; }
         public bool is_admin { get; set; }
     }
-    // Класс для десерелиализации массива пользователей
+    // Класс для десериализации массива пользователей
     internal class Users
     {
         public List<User> user { get; set; }
@@ -95,7 +95,6 @@ namespace gitlabtest
                             Console.WriteLine($"Ошибка: {ex.Message}");
                             return;
                         }
-                    
                     }
                 }
             }
